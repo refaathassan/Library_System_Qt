@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="Tlogin">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QPushButton" name="PbRestor_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>280</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Restor</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PbRemove_2">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>280</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PbLog_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>280</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Log in</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>78</x>
+        <y>75</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Enter User Name&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>160</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Enter Password&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Leuser">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>80</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Lepass">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>170</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PbSAVE">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>340</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Save Data</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PbSAVE_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>400</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="LwState">
+      <property name="geometry">
+       <rect>
+        <x>375</x>
+        <y>10</y>
+        <width>271</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_40">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>10</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.71, y2:0.784, stop:0 rgba(0, 0, 0, 255), stop:0.909091 rgba(255, 208, 208, 255));</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;State&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QListWidget" name="LwUser">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>150</y>
+        <width>371</width>
+        <height>321</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>0</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0.613636, y2:0.71, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 97, 97, 255));</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Enter Title&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0.613636, y2:0.71, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 97, 97, 255));</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Enter Filter&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeSearch">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>0</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="CbFilter">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>50</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>490</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+font: 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PbExit">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>490</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+font: 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Pbsearch">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>110</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0.613636, y2:0.71, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 97, 97, 255));
+font: 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_9">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+     <widget class="QListWidget" name="LwUser_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>150</y>
+        <width>371</width>
+        <height>321</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>490</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+font: 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeSearch_2">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>0</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="CbFilter_2">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>50</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PbExit_2">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>490</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+font: 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Pbsearch_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>110</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0.613636, y2:0.71, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 97, 97, 255));
+font: 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>50</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0.613636, y2:0.71, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 97, 97, 255));</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Enter Filter&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>0</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0.613636, y2:0.71, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 97, 97, 255));</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Enter Title&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0.613636, y2:0.71, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 97, 97, 255));</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Author&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0.613636, y2:0.71, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 97, 97, 255));</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Barcode&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0.613636, y2:0.71, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 97, 97, 255));</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Category&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0.613636, y2:0.71, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 97, 97, 255));</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;title&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>270</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+font: 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeAuthor">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>40</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeBarcode">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>80</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeCategory">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>130</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeTitle">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>180</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PbDelete">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>460</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+font: 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_39">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>400</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0.613636, y2:0.71, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 97, 97, 255));</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Barcode&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeDelete">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>400</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>LwUser</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>542</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>480</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>LwUser_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>468</x>
+     <y>552</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>463</x>
+     <y>496</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PbSAVE_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Lepass</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>461</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>477</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PbSAVE_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Leuser</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>498</x>
+     <y>448</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>442</x>
+     <y>157</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>LeTitle</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>498</x>
+     <y>544</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>276</x>
+     <y>241</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>LeCategory</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>500</x>
+     <y>540</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>LeBarcode</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>402</x>
+     <y>537</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>311</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>LeAuthor</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>458</x>
+     <y>538</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>243</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PbSAVE_2</sender>
+   <signal>clicked()</signal>
+   <receiver>LwState</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>432</x>
+     <y>450</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>433</x>
+     <y>93</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

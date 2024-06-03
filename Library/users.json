@@ -1,0 +1,17 @@
+[
+    {
+        "user": "refaathassan",
+        "password": "12345",
+        "parmission": "user"
+    },
+    {
+        "user": "mohamedali",
+        "password": "3456",
+        "parmission": "user"
+    },
+    {
+        "user": "admin",
+        "password": "6789",
+        "parmission": "admin"
+    }
+]
